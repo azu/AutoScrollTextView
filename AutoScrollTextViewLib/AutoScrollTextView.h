@@ -22,4 +22,6 @@
 
 - (void)startAutoScroll;
 - (void)stopAutoScroll;
+
+- (BOOL)isScrolling;
 @end

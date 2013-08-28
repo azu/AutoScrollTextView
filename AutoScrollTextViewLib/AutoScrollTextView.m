@@ -41,7 +41,6 @@
 
 
 - (void)autoScrollTimerFired {
-
     if ([self canScrollable]) {
         [self scrollTick];
     } else {
@@ -52,6 +51,10 @@
 - (void)scrollTick {
     [self setContentOffset:CGPointMake(0,
         self.contentOffset.y + self.scrollingIncrement) animated:NO];
+}
+
+- (BOOL)isScrolling {
+    return [self.scrollingTimer isValid];
 }
 
 - (BOOL)canScrollable {
@@ -76,6 +79,5 @@
 #pragma mark - userInteraction
 - (void)touchesEnded:(NSSet *) touches withEvent:(UIEvent *) event {
     [self stopAutoScroll];
-
 }
 @end
