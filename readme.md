@@ -4,7 +4,7 @@ Automatic scrolling ``UITextView`` subclass
 
 ## Installation
 
-
+> pod 'AutoScrollTextView', :git => "https://github.com/azu/AutoScrollTextView.git"
 
 ## Usage
 
