@@ -62,6 +62,7 @@
 		17B5CB2FB359E80C5D7A8EDA /* AutoScrollTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoScrollTextViewTests.m; sourceTree = "<group>"; };
 		17B5CCAD55700080C006B951 /* AutoScrollTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoScrollTextView.m; sourceTree = "<group>"; };
 		17B5CDE982B166F7F2DA6CB4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		17B5CDE9F2FA7D35CCDFF289 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		17B5CEE887D1F2A776FE57DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		17B5CEFE1FA8204429E77142 /* AutoScrollTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoScrollTextView.h; sourceTree = "<group>"; };
 		17B5CF5189C8773195DDA718 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -130,6 +131,7 @@
 				17B5CAA7E348AF5832EC560B /* AutoScrollTextViewLib */,
 				B49BE1BA98214A40970DD850 /* Pods.xcconfig */,
 				416B46D58B4142838F349D05 /* Pods-AutoScrollTextViewTests.xcconfig */,
+				17B5CDE9F2FA7D35CCDFF289 /* readme.md */,
 			);
 			sourceTree = "<group>";
 		};
