@@ -1,6 +1,6 @@
 # AutoScrollTextView
 
-Auto scrolling ``UITextView`` subclass
+Automatic scrolling ``UITextView`` subclass
 
 ## Installation
 
