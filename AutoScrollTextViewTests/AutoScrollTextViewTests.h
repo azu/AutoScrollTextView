@@ -7,7 +7,11 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import <OCMock/OCMock.h>
+#import "AutoScrollTextView.h"
 
-@interface AutoScrollTextViewTests : SenTestCase
+@class AutoScrollTextView;
+
+@interface AutoScrollTextViewTests : SenTestCase <AutoScrollDelegate>
 
 @end

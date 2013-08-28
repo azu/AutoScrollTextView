@@ -25,6 +25,8 @@
 		17B5CD2AC316C8B5F3D2A876 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C31942ADFA6F695032F2 /* CoreGraphics.framework */; };
 		17B5CD870E16D70103DEED83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C23FB6E34C44964A7413 /* Foundation.framework */; };
 		17B5CF393B698C62504193C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CB1249918F3F36169240 /* Default-568h@2x.png */; };
+		5DC61D53E3EF47F1A33AE0C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BACE767C72534EBCA69D28D8 /* libPods.a */; };
+		C6C1D57A21864903A786052D /* libPods-AutoScrollTextViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 028CCF524C38470DBB3F97EB /* libPods-AutoScrollTextViewTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028CCF524C38470DBB3F97EB /* libPods-AutoScrollTextViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutoScrollTextViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C079E15E2E0E51438ED2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		17B5C0B0FC4EC4647174E8BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B5C23FB6E34C44964A7413 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +65,9 @@
 		17B5CEE887D1F2A776FE57DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		17B5CEFE1FA8204429E77142 /* AutoScrollTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoScrollTextView.h; sourceTree = "<group>"; };
 		17B5CF5189C8773195DDA718 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		416B46D58B4142838F349D05 /* Pods-AutoScrollTextViewTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoScrollTextViewTests.xcconfig"; path = "Pods/Pods-AutoScrollTextViewTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		B49BE1BA98214A40970DD850 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BACE767C72534EBCA69D28D8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 				17B5C7CDC3B599B81F309ABB /* UIKit.framework in Frameworks */,
 				17B5CD870E16D70103DEED83 /* Foundation.framework in Frameworks */,
 				17B5CD2AC316C8B5F3D2A876 /* CoreGraphics.framework in Frameworks */,
+				5DC61D53E3EF47F1A33AE0C4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,7 @@
 				17B5CB3F9E3728EE5CCEC452 /* SenTestingKit.framework in Frameworks */,
 				17B5CA96F7976678270901FF /* UIKit.framework in Frameworks */,
 				17B5C965DAD0875D5355AE88 /* Foundation.framework in Frameworks */,
+				C6C1D57A21864903A786052D /* libPods-AutoScrollTextViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +128,8 @@
 				17B5CE4D3E7100DB0A7A9778 /* AutoScrollTextView */,
 				17B5C2883435E7EDC92C70A4 /* AutoScrollTextViewTests */,
 				17B5CAA7E348AF5832EC560B /* AutoScrollTextViewLib */,
+				B49BE1BA98214A40970DD850 /* Pods.xcconfig */,
+				416B46D58B4142838F349D05 /* Pods-AutoScrollTextViewTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +149,8 @@
 				17B5C23FB6E34C44964A7413 /* Foundation.framework */,
 				17B5C31942ADFA6F695032F2 /* CoreGraphics.framework */,
 				17B5C6E1801837A589C164D9 /* SenTestingKit.framework */,
+				BACE767C72534EBCA69D28D8 /* libPods.a */,
+				028CCF524C38470DBB3F97EB /* libPods-AutoScrollTextViewTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,10 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17B5CBBBEC94BA74B110A2DF /* Build configuration list for PBXNativeTarget "AutoScrollTextViewTests" */;
 			buildPhases = (
+				67E096DADB7946FA8744773C /* Check Pods Manifest.lock */,
 				17B5CF13FFA29B1D566DFFB9 /* Sources */,
 				17B5CF213EF1F32FD8221BA9 /* Frameworks */,
 				17B5CCF4B9FC5F08229B07B8 /* Resources */,
 				17B5C73113F624B660431B19 /* ShellScript */,
+				33A5E5F7EA01477AA693BF69 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17B5CD3B1F5FBE575D9F4FD5 /* Build configuration list for PBXNativeTarget "AutoScrollTextView" */;
 			buildPhases = (
+				7192C8B4C7484E6E8D2D2B85 /* Check Pods Manifest.lock */,
 				17B5C51E4CB1FFBB8948A540 /* Sources */,
 				17B5CA8B9A4909FF00631C0B /* Frameworks */,
 				17B5C8EB53907F9781F42F43 /* Resources */,
+				37F62B9906994F3696ABC3EC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +247,8 @@
 			mainGroup = 17B5C7FA0ECF6B0BFA142598;
 			productRefGroup = 17B5CB04D60ADDF3479DB4EA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				17B5CFE0E0DEDDF5A864D94C /* AutoScrollTextView */,
@@ -275,6 +293,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		33A5E5F7EA01477AA693BF69 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-AutoScrollTextViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37F62B9906994F3696ABC3EC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E096DADB7946FA8744773C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7192C8B4C7484E6E8D2D2B85 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -364,6 +442,7 @@
 		};
 		17B5C4BFB6E05541382461E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 416B46D58B4142838F349D05 /* Pods-AutoScrollTextViewTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AutoScrollTextView.app/AutoScrollTextView";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -381,17 +460,20 @@
 		};
 		17B5C713935E30E36DE5C706 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B49BE1BA98214A40970DD850 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoScrollTextView/AutoScrollTextView-Prefix.pch";
 				INFOPLIST_FILE = "AutoScrollTextView/AutoScrollTextView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		17B5C7263B11ECC8C302ACC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 416B46D58B4142838F349D05 /* Pods-AutoScrollTextViewTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AutoScrollTextView.app/AutoScrollTextView";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -440,11 +522,13 @@
 		};
 		17B5CDA1460D7624B2C24D42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B49BE1BA98214A40970DD850 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoScrollTextView/AutoScrollTextView-Prefix.pch";
 				INFOPLIST_FILE = "AutoScrollTextView/AutoScrollTextView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/** \"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
