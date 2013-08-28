@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.autoScrollTextView.scrollingDelegate = self;
-    self.autoScrollTextView.scrollingIncrement = 2;
+    self.autoScrollTextView.scrollingIncrement = 1;
 }
 
 - (void)viewWillAppear:(BOOL) animated {
